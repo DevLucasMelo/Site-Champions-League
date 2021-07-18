@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-1{
+    color: whitesmoke;
+    background-image: url("../fotos/fundo3.jpeg");
+    background-attachment: fixed;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-2{
+    color: whitesmoke;
+    background-image: url("../fotos/fundo3.jpeg");
+    background-attachment: fixed;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table.table-dark.table-borderless{
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 110px;
+    width: 190px;
+    text-align: justify;
+    border-radius: 8px;     
+    background-color: rgba(6, 6, 53, 0.9);
+}   
+h1{
+    text-align: center;
+}
+.table td{
+    position: relative;
+}
+.table .logo{
+    height: 25px;
+    width: 25px;
+    position: inherit;
+    bottom: 3px;
+    right: 8px;
+}
+
+.divisao2{
+    background-image: url("../fotos/juv.jpg");
+}
+
+.navbar.navbar-expand-lg.navbar-dark.bg-dark{
+    background-image: url("../fotos/fundo3.jpeg");
+    background-attachment: fixed;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }

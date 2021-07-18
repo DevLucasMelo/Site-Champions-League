@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio da Fase de Grupos</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="sorteio.html">Sorteio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container-1">
+    <h1>Sorteio da Fase de Grupos da Champions League</h1>
+    <table class="table table-dark table-borderless">
+        <thead> 
+        <tr><th>POTE 1</th></tr>
+        </thead>
+        <tbody>
+            <tr><td ><img src="fotos/1.png" class="logo" id="-1"><span id="p1">Chelsea</span</td></tr>
+            <tr><td><img src="fotos/2.jpg" class="logo" id="-2"><span id="p2">Villarreal</span></td></tr>
+            <tr><td ><img src="fotos/3.png" class="logo" id="-3"><span id="p3">Machester City</span></td></tr>
+            <tr><td ><img src="fotos/4.png" class="logo" id="-4"><span id="p4">Atlético de Madrid</span></td></tr>
+            <tr><td><img src="fotos/5.png" class="logo" id="-5"><span  id="p5"> Bayern de Munique</span></td></tr>
+            <tr><td ><img src="fotos/6.png" class="logo" id="-6"><span id="p6">Inter de Milão</span></td></tr>
+            <tr><td ><img src="fotos/7.png" class="logo" id="-7"><span id="p7">Lille</span></td></tr>
+            <tr><td ><img src="fotos/8.png" class="logo" id="-8"><span id="p8">Sporting</span></td></tr>
+            <tr><td><button type="button" class="btn btn-primary" onclick="sortear()">Sortear Pote 1</button></td></tr>
+        </tbody>
+    </table>
+    
+    
+    <table class="table table-dark table-borderless">
+        <thead>
+        <tr><th>POTE 2</th></tr>
+        </thead>
+        <tbody id="dois">
+        <tr><td><img src="fotos/11.png" class="logo" id="-11"><span id="p11">Real Madrid</span></td></tr>
+        <tr><td><img src="fotos/12.png" class="logo" id="-12"><span id="p12">Barcelona</span></td></tr>
+        <tr><td><img src="fotos/13.png" class="logo" id="-13"><span id="p13">Juventus</span></td></tr>
+        <tr><td><img src="fotos/14.png" class="logo" id="-14"><span id="p14">Manchester United</span></td></tr>
+        <tr><td><img src="fotos/15.png" class="logo" id="-15"><span id="p15">Paris Saint-Germain</span></td></tr>
+        <tr><td><img src="fotos/16.png" class="logo" id="-16"><span id="p16">Liverpool</span></td></tr>
+        <tr><td><img src="fotos/17.png" class="logo" id="-17"><span id="p17">Sevilla</span></td></tr>
+        <tr><td><img src="fotos/18.png" class="logo" id="-18"><span id="p18">Borussia Dortmund</span></td></tr>
+        <tr><td><button type="button" class="btn btn-primary" onclick="sortear2()">Sortear Pote 2</button></td></tr>
+    </tbody>
+    </table>
+    <table class="table table-dark table-borderless">
+        <thead>
+        <tr><th>POTE 3</th></tr>
+        </thead>
+        <tbody id="tres">        
+        <tr><td><img src="fotos/21.png" class="logo" id="-21"><span id="p21">Porto</span></td></tr>
+        <tr><td><img src="fotos/22.png" class="logo" id="-22"><span id="p22">Ajax</span></td></tr>
+        <tr><td><img src="fotos/23.png" class="logo" id="-23"><span id="p23">RB Leipzig</span></td></tr>
+        <tr><td><img src="fotos/24.png" class="logo" id="-24"><span id="p24">Atalanta</span></td></tr>
+        <tr><td><img src="fotos/25.png" class="logo" id="-25"><span id="p25">Zenit</span></td></tr>
+        <tr><td><img src="fotos/26.png" class="logo" id="-26"><span id="p26">Besiktas</span></td></tr>
+        <tr><td><img src="fotos/27.png" class="logo" id="-27"><span id="p27">Dínamo Kiev</span></td></tr>
+        <tr><td><img src="fotos/28.png" class="logo" id="-28"><span id="p28">Club Brugge</span></td></tr>
+        <tr><td><button type="button" class="btn btn-primary" onclick="sortear3()">Sortear Pote 3</button></td></tr>
+    </tbody>
+    </table>
+    <table class="table table-dark table-borderless">
+        <thead>
+        <tr><th>POTE 4</th></tr>
+        </thead>
+        <tbody id="quatro">
+        <tr><td><img src="fotos/31.png" class="logo" id="-31"><span id="p31">Milan</span></td></tr>
+        <tr><td><img src="fotos/32.png" class="logo" id="-32"><span id="p32">Wolfsburg</span></td></tr>
+        <tr><td><img src="fotos/33.png" class="logo" id="-33"><span id="p33">Lokomotiv</span></td></tr>
+        <tr><td><img src="fotos/34.png" class="logo" id="-34"><span id="p34">Galatasaray</span></td></tr>
+        <tr><td><img src="fotos/35.png" class="logo" id="-35"><span id="p35">Olympique</span></td></tr>
+        <tr><td><img src="fotos/36.png" class="logo" id="-36"><span id="p36">Lazio</span></td></tr>
+        <tr><td><img src="fotos/37.png" class="logo" id="-37"><span id="p37">Rennes</span></td></tr>
+        <tr><td><img src="fotos/38.png" class="logo" id="-38"><span id="p38">Istanbul</span></td></tr>
+        <tr><td><button type="button" class="btn btn-primary" onclick="sortear4()">Sortear Pote 4</button></td></tr>
+    </tbody>
+    </table>
+</div>
+
+<div class="container-2">
+    <h1>Fase de Grupos:</h1>
+    <table class="table table-dark table-borderless">
+        <thead>
+            <tr><th>GRUPO A</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="_1"><span id="pot1"> POTE 1</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="__1"><span id="pot12"> POTE 2</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="___1"><span id="pot13"> POTE 3</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="____1"><span id="pot14"> POTE 4</span></td></tr>
+        </tbody>
+</table>
+<table class="table table-dark table-borderless">
+        <thead>
+            <tr><th>GRUPO B</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="_2"><span id="pot2">POTE 1</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="__2"> <span id="pot22">POTE 2</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="___2"> <span id="pot23">POTE 3</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="____2"> <span id="pot24">POTE 4</span></td></tr>
+        </tbody>
+</table>
+<table class="table table-dark table-borderless">
+        <thead>
+            <tr><th>GRUPO C</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="_3"> <span id="pot3">POTE 1</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="__3"><span id="pot32">POTE 2</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="___3"> <span id="pot33">POTE 3</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="____3"> <span id="pot34">POTE 4</span></td></tr>
+        </tbody>
+</table>
+<table class="table table-dark table-borderless">
+        <thead>
+            <tr><th>GRUPO D</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="_4"> <span id="pot4">POTE 1</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="__4"> <span id="pot42">POTE 2</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="___4"> <span id="pot43">POTE 3</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="____4"> <span id="pot44">POTE 4</span></td></tr>
+        </tbody>
+</table>
+<table class="table table-dark table-borderless">
+        <thead>
+            <tr><th>GRUPO E</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="_5"> <span id="pot5">POTE 1</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="__5"> <span id="pot52">POTE 2</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="___5"> <span id="pot53">POTE 3</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="____5"> <span id="pot54">POTE 4</span></td></tr>
+        </tbody>
+</table>
+<table class="table table-dark table-borderless">
+        <thead>
+            <tr><th>GRUPO F</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="_6"> <span id="pot6">POTE 1</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="__6"> <span id="pot62">POTE 2</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="___6"> <span id="pot63">POTE 3</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="____6"> <span id="pot64">POTE 4</span></td></tr>
+        </tbody>
+</table>
+<table class="table table-dark table-borderless">
+        <thead>
+            <tr><th>GRUPO G</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="_7"> <span id="pot7">POTE 1</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="__7"> <span id="pot72">POTE 2</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="___7"> <span id="pot73">POTE 3</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="____7"> <span id="pot74">POTE 4</span></td></tr>
+        </tbody>
+</table>
+<table class="table table-dark table-borderless">
+        <thead>
+            <tr><th>GRUPO H</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="_8"> <span id="pot8">POTE 1</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="__8"><span id="pot82">POTE 1</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="___8"> <span id="pot83">POTE 1</span></td></tr>
+            <tr><td><img src="fotos/bolinha5.png" class="logo" id="____8"> <span id="pot84">POTE 1</span></td></tr>
+        </tbody>
+</table>
+</div>
+</body>
+</html>
