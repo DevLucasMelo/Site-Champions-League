@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .container-1{
@@ -44,14 +42,38 @@ h1{
     right: 8px;
 }
 
-.divisao2{
-    background-image: url("../fotos/juv.jpg");
-}
-
-.navbar.navbar-expand-lg.navbar-dark.bg-dark{
+.nav.justify-content-center{
     background-image: url("../fotos/fundo3.jpeg");
     background-attachment: fixed;   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
+    text-transform: uppercase;
+}
+.cont-1{
+    background-image: url("../fotos/fundo3.jpeg");
+    background-attachment: fixed;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cont-int{
+    background: rgba(6, 6, 53, 0.9);
+    align-items: center;
+    width: 1000px;
+    margin-left: 200px;
+    color: whitesmoke;
+}
+
+a{
+    color: whitesmoke;
+}
+.img-home{
+    
+}
+
+p{
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
