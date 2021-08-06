@@ -5,7 +5,6 @@ var time4 = [];
 function sortear(){
     var aleatorio;
     aleatorio =  Math.floor(Math.random() * 8 + 1);
-    
      for(var i=1;i<=8;i++){
        
         for(var j=0;j<8;j++){
@@ -85,7 +84,6 @@ function sortear(){
         }
     }
 }
-
 function sortear2(){
     var aleatorio;
     aleatorio =  Math.floor(Math.random() * 8 + 1);
